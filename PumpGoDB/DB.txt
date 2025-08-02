@@ -1,4 +1,10 @@
 pumpgoDB--------------------------------------
-)CLIENTE:id_cliente(pk), username, email, password, indirizzo(civico, via, città, provincia, nazione, cap),
-		 dati anagrafici(nome, cognome, data_di_nascita).
-)ADMIN:
+)CLIENTE: id_cliente(pk), username, email, password, indirizzo(civico, via, città, provincia, nazione, cap),
+		  dati anagrafici(nome, cognome, data_di_nascita).
+)ADMIN: id_admin(pk), a_username, a_password, a_email.
+
+)PRODOTTO: id_prodotto(pk), nome_p, tipo, quantità, tipo, peso, diametro, larghezza, descrizione, 
+           foto(mv),marca.
+)ORDINE: id_ordine(pk), ID_cliente(fk id_cliente), data, totale(d).
+
+)ELEMENTI: [ID_ordine(fk id_ordine), ID_prodotto(fk id_prodotto)](pk), tot_parziale(d).
