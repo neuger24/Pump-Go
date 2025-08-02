@@ -1,0 +1,4 @@
+pumpgoDB--------------------------------------
+)CLIENTE:id_cliente(pk), username, email, password, indirizzo(civico, via, città, provincia, nazione, cap),
+		 dati anagrafici(nome, cognome, data_di_nascita).
+)ADMIN:
